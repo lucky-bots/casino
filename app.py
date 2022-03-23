@@ -4,15 +4,13 @@ import uuid
 import os
 from os.path import join, dirname
 
-app = Flask(__name__, ben_folder='ben')
+app = Flask(__name__, static_folder='static')
 bootstrap = Bootstrap(app)
 
 @app.route('/')
-def index():
+def do_get():
     return render_template('index.html')
 
-
-
-
-
-if __name__ == '__main__': app.run(debug=True)
+if __name__ == '__main__':
+    app.debug = True
+    app.run()
