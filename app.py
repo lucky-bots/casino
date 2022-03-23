@@ -1,8 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template, abort, redirect, jsonify
+from flask_bootstrap import Bootstrap
+import uuid
+import os
+from os.path import join, dirname
 
-
-app = Flask(__name__)
-
+app = Flask(__name__, ben_folder='ben')
+bootstrap = Bootstrap(app)
 
 @app.route('/')
 def index():
