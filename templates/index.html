@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -220,7 +221,7 @@
 										<div class="row">
 											<div class="col-6 col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="../static/images/pic08.jpg" alt="" /></a>
+													<a href="#" class="image featured"><img style="width: 200px;height: 200px" src="..static/upload/<?php print_r$name_file?>"></a>
 													<header>
 														<h3>ชื่อเว็บ</h3>
 														<p>Posted 45 minutes ago</p>
@@ -229,7 +230,7 @@
 													<footer>
 														<ul class="actions">
 															<li><a href="#" class="button icon solid fa-file-alt">Continue Reading</a></li>
-															<li><a href="#" class="button alt icon solid fa-comment">33 comments</a></li>
+															<li><a href="../static/upload" class="button alt icon solid fa-comment">33 comments</a></li>
 														</ul>
 													</footer>
 												</section>
@@ -243,10 +244,7 @@
 													</header>
 													<p>รายละเอียด</p>
 													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button icon solid fa-file-alt">Continue Reading</a></li>
-															<li><a href="#" class="button alt icon solid fa-comment">33 comments</a></li>
-														</ul>
+												<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>			
 													</footer>
 												</section>
 											</div>
@@ -391,7 +389,8 @@
 				</section>
 
 		</div>
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v13.0&appId=1331617640639225&autoLogAppEvents=1" nonce="fphVZYPp"></script>
 		<!-- Scripts -->
 			<script src="../static/assets/js/jquery.min.js"></script>
 			<script src="../static/assets/js/jquery.dropotron.min.js"></script>
