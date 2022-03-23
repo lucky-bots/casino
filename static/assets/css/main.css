@@ -83,8 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #252122;
-		background-image: url("../static/images/bg02.png");
+		background: #ffd70050;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -101,9 +100,10 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #5d5d5d;
+		color: #ffd70050;
 		font-size: 14pt;
 		line-height: 1.75em;
+		background-color: #ffd70050;
 	}
 
 	strong, b {
@@ -134,12 +134,12 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #252122;
+		color: red;
 		font-weight: 700;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		color: inherit;
+		color: red;
 		text-decoration: none;
 	}
 
@@ -149,6 +149,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.35em;
+		color: red;
 	}
 
 	a {
@@ -159,6 +160,20 @@ input, select, textarea {
 		a:hover {
 			text-decoration: none;
 		}
+		
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
 
 	br.clear {
 		clear: both;
