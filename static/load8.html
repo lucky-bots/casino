@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bensin profile</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="https://cdn.rawgit.com/davatron5000/Lettering.js/master/jquery.lettering.js"></script>
+        <META HTTP-EQUIV="Refresh" CONTENT="5;URL=../static/8.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+    
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #6B6B6B;
+  font-family: Arial;
+  box-sizing: border-box;
+  height: 1000px;
+}
+
+.card-container {
+  width: 300px;
+  height: 530px;
+  background: linear-gradient(45deg,#7100FF ,#fff , #ffd700 , #00B4FF, #fff ,#FF1B00);
+  border-radius: 10px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 1px 10px 1px #000;
+  overflow: hidden;
+  display: inline-block;
+  
+  
+}
+
+.top-container {
+  height: 50px;
+  background: #FF002E15; 
+  border-radius: 10px 10px 0 0;
+}q
+
+.image-container {
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(95px,90px);
+}
+.image-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.bottom-container {
+  height: 390px;
+  background: #00000015; 
+  padding: 20px;
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius:0 0 10px 10px ;
+}
+.bottom-container h2, h3 {
+  box-sizing: border-box;
+  font-size: 22px;
+  line-height: .5;
+  font-weight: 400;
+}
+.bottom-container h3 {
+  color: #20a733;
+  opacity: .6;
+  font-weight: bold;
+}
+.bottom-container p {
+  font-size: 17px;
+  color: #0f100fab;
+  margin-bottom: 30px;
+}
+
+.bottom-container .btn {
+  padding: 12px 20px;
+  background: #13d12b;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .3s ease-in;
+}
+.bottom-container .btn:hover {
+  background: transparent;
+  color: #13d12b;
+  border: 2px solid #13d12b;
+}
+            
+div {
+    
+    padding: 1em;
+    color:red;
+    text-align:center ;
+}
+
+div u{
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+p {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+span {
+    color: transparent;
+    text-shadow: 0 0 30px black;
+    -webkit-transition: all 0.7s 0.3s ease;
+    -o-transition: all 0.7s 0.3s ease;
+    transition: all 0.7s 0.3s ease;
+}
+span:hover {
+    text-shadow: 0 0 0 black;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+@-webkit-keyframes blurout {
+    from {
+        text-shadow: 0 0 30px black;
+    }
+    to {
+        text-shadow: 0 0 0 black;
+    }
+}
+
+@keyframes blurout {
+    from {
+        text-shadow: 0 0 30px #fff;
+    }
+    to {
+        text-shadow: 0 0 0 #ffd700;
+    }
+}
+
+
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <p class="focus">เบนซิล รับโปรโมท เว็บ สายเทา คาสิโน </p>
+            <u>promote web casino</u>
+        </div>
+        <div class="card-container">
+  <div class="top-container">
+    <div class="image-container">
+      <img src="https://www.img.in.th/images/f4a1b04df7479b991470a36cc6be5b5a.jpg" alt="my profile picture on facebook" />
+    </div>
+  </div>
+  
+  <div class="bottom-container">
+    <div>
+      <h2><strong>Bensin</strong></h2>
+      <h3><i>Web Developer</i></h3>
+    </div>
+    <div>
+      <p>รับทำเว็บไซร์ บอท โปรโมทเว็บ คาสิโน สายเทา ติดแบนเนอร์ เว็บไซร์ โพสกลุ่มไลน์กลุ่มเฟส ติดต่อสอบถามได้ตลอดเวลา ครับ</p>
+    </div>
+  </div>
+
+</div>
+        <script>
+          $(document).ready(function() {
+    $(".focus").lettering();
+    resetAnimation();
+});
+
+function removeAnimation() {
+    var myFocusText = $(".focus").text();
+    for (var i = 1; i <= myFocusText.length; i++) {
+        $(".char" + i).css({ "animation-iteration-count": "1" });
+    }
+}
+
+function resetAnimation() {
+    var myFocusText = $(".focus").text();
+
+    for (var i = 1; i <= myFocusText.length; i++) {
+        var randomNum = Math.random() * (2 - 0.5) + 0.5;
+        $(".char" + i).css({
+            animation: "blurout " + randomNum + "s ease-out infinite forwards alternate"
+        });
+    }
+    isPaused = false;
+    $(".pause").text("Pause Animation");
+}
+
+var isPaused = false;
+function pauseAnimation(e) {
+    if (!isPaused) {
+        var myFocusText = $(".focus").text();
+        for (var i = 1; i <= myFocusText.length; i++) {
+            $(".char" + i).css({ "animation-play-state": "paused" });
+        }
+        $(".pause").text("Play Animation");
+        isPaused = true;
+    } else {
+        $(".pause").text("Pause Animation");
+        playAnimation();
+        isPaused = false;
+    }
+}
+
+function playAnimation() {
+    var myFocusText = $(".focus").text();
+    for (var i = 1; i <= myFocusText.length; i++) {
+        $(".char" + i).css({ "animation-play-state": "running" });
+    }
+}
+  
+        </script>
+    </body>
+</html>
